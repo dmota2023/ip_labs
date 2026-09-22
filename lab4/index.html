@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Student card FORM</title>
+</head>
+<body>
+    <header>
+        <h1>Student card FORM</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <section>
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Provide your details</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter a password"><br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+
+                    <p>Languages Known:</p>
+                    <input type="checkbox" id="english" name="languages" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" id="spanish" name="languages" value="spanish">
+                    <label for="spanish">Spanish</label><br>
+                    <input type="checkbox" id="french" name="languages" value="french">
+                    <label for="french">French</label><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="ukraine">Ukraine</option>
+                        <option value="poland">Poland</option>
+                        <option value="uk">UK</option>
+                    </select><br><br>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Select your subjects:</legend>
+                    
+                    <label for="subjects">Choose subjects:</label><br>
+                    <select id="subjects" name="subjects" multiple>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="computer_science">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="english">English</option>
+                    </select><br><br>
+
+                    <label for="interest">Rate your interest in Computer Science:</label>
+                    <input type="range" id="interest" name="interest" min="1" max="10"><br><br>
+                </fieldset>
+            </section>
+
+            <section>
+                <h2>Skills Assessment</h2>
+                <fieldset>
+                    <legend>Assess your skills</legend>
+                    
+                    <label for="skills">Describe your skills:</label><br>
+                    <textarea id="skills" name="skills" placeholder="List your skills here..." rows="4" cols="40"></textarea><br><br>
+
+                    <label for="resume">Upload your resume:</label>
+                    <input type="file" id="resume" name="resume"><br><br>
+
+                    <label for="color">Pick your favorite color:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="time">Preferred study time:</label>
+                    <input type="time" id="time" name="time"><br><br>
+
+                    <input type="submit" value="Submit Survey">
+                </fieldset>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>Student card by Mota Dmytro TK-41. All rights reserved.</p>
+    </footer>
+</body>
+</html>
